@@ -2,11 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const Mobile = require("./models/mobile");
 require("dotenv").config();
-// const cros = require('cros');
+const cors = require('cors');
 
 const app = express();
 
-// app.use(cros());
+app.use(cors());
 const uri = process.env.URI;
 const port = process.env.PORT|| 8000;
 
